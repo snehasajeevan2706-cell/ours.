@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SheGuard – Safety & Care for Everyone. Emergency help, mental health support, and trusted care in one place." />
+  <title>SheGuard – Safety &amp; Care for Everyone</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ─── AMBIENT BACKGROUND ───────────────────────────────── -->
+<div class="bg-ambient" aria-hidden="true"></div>
+
+
+<!-- ─── FLOATING CHERRY PETALS ───────────────────────────── -->
+<div class="petal petal--1" aria-hidden="true">
+  <svg viewBox="0 0 40 40"><ellipse cx="20" cy="17" rx="13" ry="8.5" fill="rgba(210,80,100,0.55)" transform="rotate(-18 20 20)"/><ellipse cx="20" cy="23" rx="13" ry="8.5" fill="rgba(180,50,70,0.48)" transform="rotate(14 20 20)"/></svg>
+</div>
+<div class="petal petal--2" aria-hidden="true">
+  <svg viewBox="0 0 40 40"><ellipse cx="20" cy="17" rx="13" ry="8.5" fill="rgba(220,90,110,0.5)" transform="rotate(10 20 20)"/><ellipse cx="20" cy="23" rx="13" ry="8.5" fill="rgba(190,60,80,0.43)" transform="rotate(-20 20 20)"/></svg>
+</div>
+<div class="petal petal--3" aria-hidden="true">
+  <svg viewBox="0 0 40 40"><ellipse cx="20" cy="17" rx="13" ry="8.5" fill="rgba(200,70,90,0.52)" transform="rotate(26 20 20)"/><ellipse cx="20" cy="23" rx="13" ry="8.5" fill="rgba(170,40,60,0.44)" transform="rotate(-11 20 20)"/></svg>
+</div>
+<div class="petal petal--4" aria-hidden="true">
+  <svg viewBox="0 0 40 40"><ellipse cx="20" cy="17" rx="13" ry="8.5" fill="rgba(215,85,105,0.48)" transform="rotate(-6 20 20)"/><ellipse cx="20" cy="23" rx="13" ry="8.5" fill="rgba(185,55,75,0.42)" transform="rotate(19 20 20)"/></svg>
+</div>
+<div class="petal petal--5" aria-hidden="true">
+  <svg viewBox="0 0 40 40"><ellipse cx="20" cy="17" rx="13" ry="8.5" fill="rgba(205,75,95,0.52)" transform="rotate(9 20 20)"/><ellipse cx="20" cy="23" rx="13" ry="8.5" fill="rgba(175,45,65,0.45)" transform="rotate(-23 20 20)"/></svg>
+</div>
+<div class="petal petal--6" aria-hidden="true">
+  <svg viewBox="0 0 40 40"><ellipse cx="20" cy="17" rx="13" ry="8.5" fill="rgba(195,65,85,0.5)" transform="rotate(-19 20 20)"/><ellipse cx="20" cy="23" rx="13" ry="8.5" fill="rgba(165,35,55,0.43)" transform="rotate(13 20 20)"/></svg>
+</div>
+<div class="petal petal--7" aria-hidden="true">
+  <svg viewBox="0 0 40 40"><ellipse cx="20" cy="17" rx="13" ry="8.5" fill="rgba(218,88,108,0.47)" transform="rotate(5 20 20)"/><ellipse cx="20" cy="23" rx="13" ry="8.5" fill="rgba(188,58,78,0.41)" transform="rotate(-16 20 20)"/></svg>
+</div>
+
+
+<!-- ─── MAIN WRAPPER ─────────────────────────────────────── -->
+<div class="wrapper">
+
+
+  <!-- ════════════════════════════════════════════════════════
+       NAVIGATION
+       ════════════════════════════════════════════════════════ -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <a href="#" class="nav__logo" aria-label="SheGuard Home">
+      <img src="logo.svg" alt="SheGuard cherry blossom logo" class="nav__logo-img" />
+      <span class="nav__logo-text">SheGuard</span>
+    </a>
+
+    <ul class="nav__links">
+      <li><a href="#emergency">Emergency</a></li>
+      <li><a href="#safety">Safety</a></li>
+      <li><a href="#mental">Mental Health</a></li>
+      <li><a href="#support">Support</a></li>
+      <li><a href="#legal">Legal</a></li>
+      <li><a href="#community">Community</a></li>
+    </ul>
+
+    <!-- Mobile hamburger -->
+    <button class="nav__toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="nav__mobile" role="dialog" aria-label="Mobile navigation">
+    <button class="nav__mobile-close" aria-label="Close menu">&times;</button>
+    <a href="#emergency">Emergency</a>
+    <a href="#safety">Safety</a>
+    <a href="#mental">Mental Health</a>
+    <a href="#support">Support</a>
+    <a href="#legal">Legal</a>
+    <a href="#community">Community</a>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       HERO
+       ════════════════════════════════════════════════════════ -->
+  <section class="hero" aria-label="Welcome to SheGuard">
+    <img src="logo.svg" alt="" class="hero__logo" aria-hidden="true" />
+    <h1 class="hero__title">SheGuard</h1>
+    <p class="hero__tagline">Safety &amp; Care for Everyone</p>
+
+    <p class="hero__desc">
+      You are not alone. Your safety and mental health matter.<br />
+      One place for emergency help, mental health care, and trusted support — anytime, anywhere.
+    </p>
+
+    <div class="hero__pills">
+      <span class="pill">👉 Help when you need it</span>
+      <span class="pill">👉 Care when you feel low</span>
+      <span class="pill">👉 Support you can trust</span>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      Scroll to explore
+      <span class="hero__scroll-arrow">↓</span>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       EMERGENCY – SOS
+       ════════════════════════════════════════════════════════ -->
+  <section class="sos" id="emergency" aria-labelledby="sos-heading">
+    <div class="section__header">
+      <span class="section__label">🚨 Emergency Help</span>
+      <div class="section__divider"></div>
+      <h2 class="section__title" id="sos-heading">One Tap for Help</h2>
+      <p class="section__sub">Works fast in emergencies. Help reaches you quickly.</p>
+    </div>
+
+    <div class="sos__ring">
+      <button class="sos__btn" aria-label="Activate emergency SOS">
+        <span class="sos__btn-label">SOS</span>
+        <span class="sos__btn-sub">TAP FOR HELP</span>
+      </button>
+    </div>
+
+    <div class="sos__features">
+      <div class="sos__feature">
+        <div class="sos__feature-icon">📍</div>
+        <span class="sos__feature-label">Sends live location to police &amp; contacts</span>
+      </div>
+      <div class="sos__feature">
+        <div class="sos__feature-icon">🎙️</div>
+        <span class="sos__feature-label">Records audio or video automatically</span>
+      </div>
+      <div class="sos__feature">
+        <div class="sos__feature-icon">📱</div>
+        <span class="sos__feature-label">SMS fallback with low internet</span>
+      </div>
+      <div class="sos__feature">
+        <div class="sos__feature-icon">⚡</div>
+        <span class="sos__feature-label">Ultra-fast emergency activation</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       LOCATION SAFETY
+       ════════════════════════════════════════════════════════ -->
+  <section class="section" id="safety" aria-labelledby="safety-heading">
+    <div class="section__header">
+      <span class="section__label">📍 Location Safety</span>
+      <div class="section__divider"></div>
+      <h2 class="section__title" id="safety-heading">Someone Always Knows<br />Where You Are</h2>
+      <p class="section__sub">Travel with confidence. Real-time safety at every step.</p>
+    </div>
+
+    <div class="card-grid">
+      <!-- Card 1 -->
+      <article class="card">
+        <div class="card__icon card__icon--red">🗺️</div>
+        <h3 class="card__title">Live Location Sharing</h3>
+        <p class="card__text">Share your real-time GPS location with trusted contacts instantly.</p>
+        <ul class="card__list">
+          <li><span class="dot"></span>Auto-updates every few seconds</li>
+          <li><span class="dot"></span>Map view for contacts &amp; authorities</li>
+        </ul>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card">
+        <div class="card__icon card__icon--pink">🛡️</div>
+        <h3 class="card__title">Safe Travel Mode</h3>
+        <p class="card__text">Share your route and ETA. Get alerted if something feels wrong.</p>
+        <ul class="card__list">
+          <li><span class="dot"></span>Auto-alert if you stop moving</li>
+          <li><span class="dot"></span>Route sharing with contacts</li>
+        </ul>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card">
+        <div class="card__icon card__icon--gold">⚠️</div>
+        <h3 class="card__title">Danger Zone Alerts</h3>
+        <p class="card__text">Get warned when entering areas reported as unsafe by the community.</p>
+        <ul class="card__list">
+          <li><span class="dot"></span>Community-reported crime zones</li>
+          <li><span class="dot"></span>Area-based safety warnings</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       MENTAL HEALTH
+       ════════════════════════════════════════════════════════ -->
+  <section class="section" id="mental" aria-labelledby="mental-heading">
+    <div class="section__header">
+      <span class="section__label">🧠 Mental Health</span>
+      <div class="section__divider"></div>
+      <h2 class="section__title" id="mental-heading">Your Feelings Are Important</h2>
+      <p class="section__sub">It's okay to ask for help. Support for stress, anxiety, and more.</p>
+    </div>
+
+    <div class="card-grid">
+      <article class="card">
+        <div class="card__icon card__icon--blue">💬</div>
+        <h3 class="card__title">Anonymous Chat</h3>
+        <p class="card__text">Talk to a counselor privately. No name required — your identity stays safe.</p>
+        <ul class="card__list">
+          <li><span class="dot"></span>Text or audio chat</li>
+          <li><span class="dot"></span>AI + human therapists</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card__icon card__icon--purple">📊</div>
+        <h3 class="card__title">Mood Tracker</h3>
+        <p class="card__text">Daily emotional check-ins to understand your mental health better over time.</p>
+        <ul class="card__list">
+          <li><span class="dot"></span>Insights &amp; weekly reports</li>
+          <li><span class="dot"></span>Track your progress daily</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card__icon card__icon--green">🧘</div>
+        <h3 class="card__title">Self-Help Resources</h3>
+        <p class="card__text">Calm exercises, meditation, breathing guides, and trauma recovery tools.</p>
+        <ul class="card__list">
+          <li><span class="dot"></span>Guided meditation</li>
+          <li><span class="dot"></span>Sleep &amp; breathing guidance</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       DUAL SUPPORT – Women & Men
+       ════════════════════════════════════════════════════════ -->
+  <section class="section" id="support" aria-labelledby="support-heading">
+    <div class="section__header">
+      <span class="section__label">💛 Support</span>
+      <div class="section__divider"></div>
+      <h2 class="section__title" id="support-heading">Tailored Support for You</h2>
+      <p class="section__sub">Whether you identify as a woman or a man — support here is for everyone.</p>
+    </div>
+
+    <div class="dual-grid">
+      <!-- Women -->
+      <div class="dual-card dual-card--women">
+        <span class="dual-card__icon">🌼</span>
+        <h3 class="dual-card__title">Support for Women</h3>
+        <p class="dual-card__quote">"Strength. Safety. Respect."</p>
+        <ul class="card__list">
+          <li><span class="dot"></span>Help for abuse &amp; harassment</li>
+          <li><span class="dot"></span>Safety guidance &amp; planning</li>
+          <li><span class="dot"></span>Legal awareness resources</li>
+          <li><span class="dot"></span>Supportive community network</li>
+        </ul>
+      </div>
+
+      <!-- Men -->
+      <div class="dual-card dual-card--men">
+        <span class="dual-card__icon">🌿</span>
+        <h3 class="dual-card__title">Support for Men</h3>
+        <p class="dual-card__quote">"Being strong means speaking up."</p>
+        <ul class="card__list">
+          <li><span class="dot"></span>Emotional support &amp; guidance</li>
+          <li><span class="dot"></span>Stress and pressure help</li>
+          <li><span class="dot"></span>Private and safe space</li>
+          <li><span class="dot"></span>Zero judgment, full support</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       LEGAL HELP & REPORTING
+       ════════════════════════════════════════════════════════ -->
+  <section class="section" id="legal" aria-labelledby="legal-heading">
+    <div class="section__header">
+      <span class="section__label">👮 Legal Help &amp; Reporting</span>
+      <div class="section__divider"></div>
+      <h2 class="section__title" id="legal-heading">Know Your Rights.<br />Speak Up Safely.</h2>
+      <p class="section__sub">Knowledge gives protection. Speaking up can save lives.</p>
+    </div>
+
+    <div class="card-grid">
+      <article class="card">
+        <div class="card__icon card__icon--gold">⚖️</div>
+        <h3 class="card__title">Know Your Rights</h3>
+        <p class="card__text">Understand the laws that protect you — at work, at home, and in public.</p>
+        <ul class="card__list">
+          <li><span class="dot"></span>Women's safety laws</li>
+          <li><span class="dot"></span>Workplace harassment rights</li>
+          <li><span class="dot"></span>Domestic violence acts</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card__icon card__icon--red">📝</div>
+        <h3 class="card__title">Report a Problem</h3>
+        <p class="card__text">Your voice matters. Report safely and stay anonymous if you choose.</p>
+        <ul class="card__list">
+          <li><span class="dot"></span>Anonymous complaint system</li>
+          <li><span class="dot"></span>Upload proof securely</li>
+          <li><span class="dot"></span>Auto-forward to authorities</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card__icon card__icon--green">🏛️</div>
+        <h3 class="card__title">Legal Aid Directory</h3>
+        <p class="card__text">Connect with free lawyers, NGOs, and women's support organizations near you.</p>
+        <ul class="card__list">
+          <li><span class="dot"></span>Free legal contacts</li>
+          <li><span class="dot"></span>Nearby NGOs &amp; helpers</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       COMMUNITY SAFETY
+       ════════════════════════════════════════════════════════ -->
+  <section class="section" id="community" aria-labelledby="community-heading">
+    <div class="section__header">
+      <span class="section__label">🌍 Community Safety</span>
+      <div class="section__divider"></div>
+      <h2 class="section__title" id="community-heading">Safer Together</h2>
+      <p class="section__sub">Care starts with people. Share, warn, and protect each other.</p>
+    </div>
+
+    <div class="card-grid">
+      <article class="card">
+        <div class="card__icon card__icon--pink">📢</div>
+        <h3 class="card__title">Community Alerts</h3>
+        <p class="card__text">Share and receive safety warnings for your area in real time.</p>
+        <ul class="card__list">
+          <li><span class="dot"></span>Area-based alerts</li>
+          <li><span class="dot"></span>Community-driven warnings</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card__icon card__icon--blue">🤝</div>
+        <h3 class="card__title">Volunteer Network</h3>
+        <p class="card__text">Find verified helpers and emergency responders nearby when needed.</p>
+        <ul class="card__list">
+          <li><span class="dot"></span>Nearby verified helpers</li>
+          <li><span class="dot"></span>Emergency responder access</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <div class="card__icon card__icon--purple">💚</div>
+        <h3 class="card__title">Crisis Helplines</h3>
+        <p class="card__text">24/7 access to suicide prevention and domestic abuse helplines.</p>
+        <ul class="card__list">
+          <li><span class="dot"></span>Suicide prevention support</li>
+          <li><span class="dot"></span>24/7 helpline numbers</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       PRIVACY & TRUST
+       ════════════════════════════════════════════════════════ -->
+  <section class="section" aria-labelledby="privacy-heading">
+    <div class="section__header">
+      <span class="section__label">🔐 Privacy &amp; Trust</span>
+      <div class="section__divider"></div>
+      <h2 class="section__title" id="privacy-heading">Your Data Is Safe</h2>
+      <p class="section__sub">Your trust matters. We protect it completely.</p>
+    </div>
+
+    <div class="privacy-grid">
+      <div class="priv-card">
+        <span class="priv-card__icon">🔒</span>
+        <div class="priv-card__title">End-to-End Encryption</div>
+        <p class="priv-card__text">All data encrypted before it leaves your device.</p>
+      </div>
+      <div class="priv-card">
+        <span class="priv-card__icon">🔑</span>
+        <div class="priv-card__title">Biometric Login</div>
+        <p class="priv-card__text">Fingerprint or face unlock for fast, secure access.</p>
+      </div>
+      <div class="priv-card">
+        <span class="priv-card__icon">🛡️</span>
+        <div class="priv-card__title">No Sharing</div>
+        <p class="priv-card__text">Nothing shared without your explicit permission.</p>
+      </div>
+      <div class="priv-card">
+        <span class="priv-card__icon">👁️</span>
+        <div class="priv-card__title">Incognito Mode</div>
+        <p class="priv-card__text">Use SheGuard without any visible trace on your device.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       FINAL CTA
+       ════════════════════════════════════════════════════════ -->
+  <section class="cta" aria-label="Closing message">
+    <div class="cta__blob" aria-hidden="true"></div>
+
+    <div class="cta__badge">🌸 You Matter</div>
+
+    <div class="section__header">
+      <h2 class="section__title" style="font-size: clamp(2.2rem, 5vw, 3.2rem);">
+        SheGuard Cares for You.<br />Anytime. Anywhere.
+      </h2>
+      <p class="section__sub" style="max-width:480px; margin:0 auto 40px;">
+        Safety is a right. Mental health is important. You deserve support — no matter who you are, no matter where you are.
+      </p>
+    </div>
+
+    <img src="logo.svg" alt="" class="cta__logo" aria-hidden="true" />
+    <p class="cta__closing">🌸 You matter.</p>
+  </section>
+
+
+  <!-- ════════════════════════════════════════════════════════
+       FOOTER
+       ════════════════════════════════════════════════════════ -->
+  <footer>
+    <p>© 2026 SheGuard — Safety &amp; Care for Everyone <span class="heart">♥</span></p>
+  </footer>
+
+</div><!-- /wrapper -->
+
+
+<!-- ─── SCRIPT ───────────────────────────────────────────── -->
+<script src="script.js"></script>
+
+</body>
+</html>

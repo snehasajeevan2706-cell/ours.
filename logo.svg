@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <radialGradient id="petalGrad1" cx="50%" cy="100%" r="100%">
+      <stop offset="0%" stop-color="#E85580"/>
+      <stop offset="100%" stop-color="#C42050"/>
+    </radialGradient>
+    <radialGradient id="petalGrad2" cx="50%" cy="100%" r="100%">
+      <stop offset="0%" stop-color="#D84070"/>
+      <stop offset="100%" stop-color="#B81848"/>
+    </radialGradient>
+    <radialGradient id="centerGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF5E0"/>
+      <stop offset="60%" stop-color="#F0D080"/>
+      <stop offset="100%" stop-color="#E8B84B"/>
+    </radialGradient>
+    <filter id="petalShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#8B0000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="centerGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Petal 1 – top (0°) -->
+  <g transform="rotate(0 60 60)" filter="url(#petalShadow)">
+    <ellipse cx="60" cy="27" rx="17" ry="10.5" fill="url(#petalGrad1)" opacity="0.95"/>
+    <line x1="60" y1="56" x2="60" y2="22" stroke="rgba(255,255,255,0.28)" stroke-width="1" stroke-linecap="round"/>
+  </g>
+  <!-- Petal 2 – 72° -->
+  <g transform="rotate(72 60 60)" filter="url(#petalShadow)">
+    <ellipse cx="60" cy="27" rx="17" ry="10.5" fill="url(#petalGrad2)" opacity="0.92"/>
+    <line x1="60" y1="56" x2="60" y2="22" stroke="rgba(255,255,255,0.25)" stroke-width="1" stroke-linecap="round"/>
+  </g>
+  <!-- Petal 3 – 144° -->
+  <g transform="rotate(144 60 60)" filter="url(#petalShadow)">
+    <ellipse cx="60" cy="27" rx="17" ry="10.5" fill="url(#petalGrad1)" opacity="0.88"/>
+    <line x1="60" y1="56" x2="60" y2="22" stroke="rgba(255,255,255,0.22)" stroke-width="1" stroke-linecap="round"/>
+  </g>
+  <!-- Petal 4 – 216° -->
+  <g transform="rotate(216 60 60)" filter="url(#petalShadow)">
+    <ellipse cx="60" cy="27" rx="17" ry="10.5" fill="url(#petalGrad2)" opacity="0.88"/>
+    <line x1="60" y1="56" x2="60" y2="22" stroke="rgba(255,255,255,0.22)" stroke-width="1" stroke-linecap="round"/>
+  </g>
+  <!-- Petal 5 – 288° -->
+  <g transform="rotate(288 60 60)" filter="url(#petalShadow)">
+    <ellipse cx="60" cy="27" rx="17" ry="10.5" fill="url(#petalGrad1)" opacity="0.93"/>
+    <line x1="60" y1="56" x2="60" y2="22" stroke="rgba(255,255,255,0.26)" stroke-width="1" stroke-linecap="round"/>
+  </g>
+
+  <!-- Center circle -->
+  <circle cx="60" cy="60" r="11.5" fill="url(#centerGrad)" filter="url(#centerGlow)"/>
+  <circle cx="60" cy="60" r="5.5"  fill="#FFF5E0"/>
+
+  <!-- Stamens (5 white dots radiating) -->
+  <circle cx="60" cy="51" r="1.8" fill="#fff" opacity="0.8" transform="rotate(0 60 60)"/>
+  <circle cx="60" cy="51" r="1.8" fill="#fff" opacity="0.8" transform="rotate(72 60 60)"/>
+  <circle cx="60" cy="51" r="1.8" fill="#fff" opacity="0.8" transform="rotate(144 60 60)"/>
+  <circle cx="60" cy="51" r="1.8" fill="#fff" opacity="0.8" transform="rotate(216 60 60)"/>
+  <circle cx="60" cy="51" r="1.8" fill="#fff" opacity="0.8" transform="rotate(288 60 60)"/>
+</svg>
